@@ -17,4 +17,4 @@ Feature: Apply for a job
 
     Examples:
       | First Name | Last Name  | Email                | Country combo-box | City | Result                                                                                            |
-      | Taras      | Shevchenko | shevchenko@gmail.com | Ukraina           | Kiev | Thank you for your submission! Our Talent Acquisition team will contact you with further details. |
+      | Taras      | Shevchenko | shevchenko@gmail.com | Ukraina           | Kyiv | Thank you for your submission! Our Talent Acquisition team will contact you with further details. |
