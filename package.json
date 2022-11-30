@@ -1,0 +1,27 @@
+{
+  "name": "saniie_mustafaieva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaniieMustafaieva/Saniie_Mustafaieva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaniieMustafaieva/Saniie_Mustafaieva/issues"
+  },
+  "homepage": "https://github.com/SaniieMustafaieva/Saniie_Mustafaieva#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.9.0"
+  },
+  "dependencies": {
+    "chromedriver": "^107.0.3",
+    "selenium-webdriver": "^4.6.1"
+  }
+}
