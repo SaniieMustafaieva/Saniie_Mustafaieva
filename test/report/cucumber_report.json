@@ -1,0 +1,396 @@
+[
+  {
+    "description": "    As an admin",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-management;login-to-admin-site",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "login to admin site",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "login \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\" is opened",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 484447
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Username \"Admin\" entered",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 949208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 6,
+            "name": "password \"admin123\" entered",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201556
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 7,
+            "name": "login button pressed",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244397
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "admin goes to the page \"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index\"",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214159
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;navigate-to-add-user-page",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "navigate to Add User page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "admin clicks on Admin menu item \"/web/index.php/admin/viewAdminModule\"",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99108
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Add button pressed",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175031
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;fill-the-form-\"add-user\"",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "fill the form \"Add User\"",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "page  with form is opened",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:116"
+            },
+            "result": {
+              "status": "pending",
+              "duration": 58985
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "in field \"ESS\" selected value",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 27,
+            "name": "in field \"Enaible\" selected value",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 28,
+            "name": "in field \"qweR12345@\" entered password",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 29,
+            "name": "in field \"qweR12345@\" entered password",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 30,
+            "name": "in EmployeeName field \"Odis Adalwin\" entered value",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:142"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 31,
+            "name": "in field \"Saniie\" entered username",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:147"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 32,
+            "name": "Save button pressed",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:152"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "open new page with admin's user among others",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:157"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;chek-the-user-is-created",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Chek the user is created",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "page with users loaded",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "created user is present",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:170"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;field-is-appeared-after-reset-procedure",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Field is appeared after Reset procedure",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "page with users loaded",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 51,
+            "name": "Edit button is pressed",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:182"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "Cancel button is pressed",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:187"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "page with users profile is returned",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:192"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;chek-the-delete-function",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Chek the delete function",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "page with users loaded",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "Delete button is pressed",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:205"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "in the modal window \"Yes,delete\" button is pressed",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:210"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "created user isn't present",
+            "match": {
+              "location": "features/step_definitions/UserManagerSteps.js:215"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Management",
+    "tags": [],
+    "uri": "features/UserManagement.feature"
+  }
+]
