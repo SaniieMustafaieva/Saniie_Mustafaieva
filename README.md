@@ -13,4 +13,5 @@ How to generate report
 ====
 
 `npm run gen-report` # to run tests with metodata generation for report
+
 `npm run report` # to create HTML report
