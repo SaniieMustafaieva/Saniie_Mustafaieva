@@ -1,0 +1,33 @@
+{
+  "name": "WebAPITesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cucumber": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js",
+    "test": "npm run cucumber",
+    "report": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js --format html:./test/report/report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaniieMustafaieva/Saniie_Mustafaieva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaniieMustafaieva/Saniie_Mustafaieva/issues"
+  },
+  "homepage": "https://github.com/SaniieMustafaieva/Saniie_Mustafaieva#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.9.0",
+    "@cucumber/html-formatter": "^20.2.0",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "axios": "^1.2.1",
+    "cucumber-console-formatter": "^1.0.0",
+    "cucumber-html-reporter": "^5.5.0",
+    "expect": "^29.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2019",
+    "module": "commonjs",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "noEmit": false,
+    "outDir": "build",
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  }
+}
