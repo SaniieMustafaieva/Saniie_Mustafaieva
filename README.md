@@ -4,6 +4,11 @@ Environment
 ======
 * NodeJS **v18.11+**
 
+
+# How to install dependencies
+
+`npm install`
+
 How to run test
 ====
 
