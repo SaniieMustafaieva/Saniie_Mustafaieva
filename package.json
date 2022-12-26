@@ -1,5 +1,5 @@
 {
-  "name": "my-new-project",
+  "name": "selenium + wdio",
   "type": "module",
   "devDependencies": {
     "@wdio/cli": "^8.0.13",
