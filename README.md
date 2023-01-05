@@ -6,7 +6,7 @@
 
 # How to install dependencies
 
-`npm install`
+`npm install --force`
 
 # How to run test
 

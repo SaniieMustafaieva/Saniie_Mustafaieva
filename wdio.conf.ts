@@ -1,5 +1,11 @@
 import type { Options } from "@wdio/types";
-import { removeSync } from "fs-extra";
+import { rmdirSync, existsSync } from "fs";
+
+function rmReports(path) {
+  if (existsSync(path)) {
+    rmdirSync(path, { recursive: true });
+  }
+}
 
 export const config: Options.Testrunner = {
   //
@@ -195,7 +201,7 @@ export const config: Options.Testrunner = {
    * @param {Array.<Object>} capabilities list of capabilities details
    */
   onPrepare: function (config, capabilities) {
-    removeSync("./reports");
+    rmReports("./reports");
   },
   /**
    * Gets executed before a worker process is spawned and can be used to initialise specific service
