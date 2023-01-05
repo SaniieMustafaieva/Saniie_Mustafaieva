@@ -23,23 +23,29 @@ Feature: User Management
 
 
 
-# Scenario: Chek the user is created
-#     Given I am on the Users Grid page
-#     Then created user is present
-#     Examples:
-#         | UsernameInAddForm |
-#         | Saniie            |
+    Scenario: Chek the user is created
+        Given I am on the Users Grid page
+        Then created user is present <UsernameInAddForm>
+        Examples:
+            | UsernameInAddForm |
+            | Saniie            |
 
 
-# Scenario: Field is appeared after Reset procedure
-#     Given I am on the Users Grid page
-#     When I press Edit button
-#     And I press Cancel button
-#     Then page with users profile is returned
+    Scenario: Field is appeared after Reset procedure
+        Given I am on the Users Grid page
+        When I press Edit button for user <UserName>
+        And I press Cancel button
+        Then I go to the Users Grid page
+        Examples:
+            | UserName |
+            | Saniie   |
 
 
-# Scenario: Chek the delete function
-#     Given I am on the Users Grid page
-#     When I press Delete button
-#     And in the modal window I press "Yes,delete" button
-#     Then created user isn't present
+    Scenario: Chek the delete function
+        Given I am on the Users Grid page
+        When I press Delete button for user <UserName>
+        And in the modal window I press "Yes,delete" button
+        Then there is no user with name <UserName>
+        Examples:
+            | UserName |
+            | Saniie   |

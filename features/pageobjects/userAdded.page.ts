@@ -2,6 +2,9 @@ import Page from "./page.js";
 import { Key } from "webdriverio";
 
 class UserAddedPage extends Page {
+  public async pressCancelButton() {
+    await $("button.oxd-button--ghost").click();
+  }
   public get userAdded() {
     return $(".orangehrm-card-container");
   }

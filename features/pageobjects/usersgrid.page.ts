@@ -8,7 +8,7 @@ class UsersGridPage extends Page {
     return $("div.orangehrm-header-container > button.oxd-button");
   }
   public get findUserInGrid() {
-    return $$("div.card-body-slot > div.data");
+    return $$("div.card-center");
   }
   async isUsersGridExists() {
     return await this.userGrid.waitForExist();
@@ -19,8 +19,42 @@ class UsersGridPage extends Page {
   }
 
   public async isUserCreated(userName) {
-    let users = await this.findUserInGrid;
-    console.log(users);
+    await this.userGrid.waitForDisplayed();
+    return await $(">>>div.orangehrm-container")
+      .$(`div=${userName}`)
+      .isDisplayed();
+  }
+
+  public async clickEditUserButton(userName: string) {
+    await this.userGrid.waitForDisplayed();
+    const userNameEl = await $(">>>div.orangehrm-container").$(
+      `div=${userName}`
+    );
+    userNameEl
+      .$("..")
+      .$("..")
+      .$("..")
+      .$("..")
+      .$$("button.oxd-table-cell-action-space")[1]
+      .click();
+
+    await $("div.orangehrm-card-container").waitForDisplayed();
+  }
+
+  public async clickDeleteUserButton(userName: string) {
+    await this.userGrid.waitForDisplayed();
+    const userNameEl = await $(">>>div.orangehrm-container").$(
+      `div=${userName}`
+    );
+    userNameEl
+      .$("..")
+      .$("..")
+      .$("..")
+      .$("..")
+      .$$("button.oxd-table-cell-action-space")[0]
+      .click();
+
+    await $("div.orangehrm-modal-header").waitForDisplayed();
   }
 }
 
