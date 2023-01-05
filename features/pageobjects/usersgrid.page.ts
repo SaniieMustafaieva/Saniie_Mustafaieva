@@ -30,10 +30,10 @@ class UsersGridPage extends Page {
     const userNameEl = await $(">>>div.orangehrm-container").$(
       `div=${userName}`
     );
-    userNameEl
-      .$("..")
-      .$("..")
-      .$("..")
+    await userNameEl.getText().then((text) => {});
+
+    await $(">>>div.orangehrm-container")
+      .$(`div=${userName}`)
       .$("..")
       .$$("button.oxd-table-cell-action-space")[1]
       .click();
@@ -43,13 +43,17 @@ class UsersGridPage extends Page {
 
   public async clickDeleteUserButton(userName: string) {
     await this.userGrid.waitForDisplayed();
+
     const userNameEl = await $(">>>div.orangehrm-container").$(
       `div=${userName}`
     );
-    userNameEl
-      .$("..")
-      .$("..")
-      .$("..")
+
+    await userNameEl.getText().then((text) => {
+      console.log("User el was found=========", text);
+    });
+
+    await $(">>>div.orangehrm-container")
+      .$(`div=${userName}`)
       .$("..")
       .$$("button.oxd-table-cell-action-space")[0]
       .click();

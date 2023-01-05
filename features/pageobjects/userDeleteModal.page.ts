@@ -11,7 +11,7 @@ class UserDeleteModalPage extends Page {
     await this.btnDelete.waitForDisplayed();
     await this.btnDelete.click();
     await browser.pause(3000);
-    await $("div.oxd-dialog-sheet").waitForDisplayed({ reverse: false });
+    await $("div.oxd-dialog-sheet").waitForDisplayed({ reverse: true });
   }
 }
 
