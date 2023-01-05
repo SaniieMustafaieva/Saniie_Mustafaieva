@@ -15,3 +15,7 @@ When(/^I click on "Add" button$/, async () => {
 Then(/^I go to the User Added page$/, async () => {
   assert.equal(await userAddedPage.isUserAddedExists(), true);
 });
+
+Then(/^created user is present$/, async (userName) => {
+    assert.equal(await usersgridPage.isUserCreated(userName), true);
+}); 

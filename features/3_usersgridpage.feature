@@ -9,18 +9,17 @@ Feature: User Management
 
     Scenario: As a admin,I fill the form "Add User"
         Given I am on the User Added page
-        When I select value in field <UserRole>
-        # * I select value in field <Status>
-        # * I enter password in field <PasswordInAddForm>
-        # * I enter password in field <ConfirmPassword>
+        When I select value in field Role <UserRole>
+        * I enter password in field <PasswordInAddForm>
+        * I select value in field Status <Status>
         * I enter value in EmployeeName field <EmployeeName>
         * I enter username in field <UsernameInAddForm>
-        # * I press Save button
-        # Then I go to the Users Grid page
+        * I press Save button
+        Then I go to the Users Grid page
 
         Examples:
-            | UserRole | Status  | PasswordInAddForm | ConfirmPassword | EmployeeName   | UsernameInAddForm |
-            | ESS      | Enaible | qweR12345@        | qweR12345@      | Leny  Carvalho | Saniie            |
+            | UserRole | Status  | PasswordInAddForm | EmployeeName | UsernameInAddForm |
+            | ESS      | Enabled | qweR12345@        | Odis Adalwin | Saniie            |
 
 
 
